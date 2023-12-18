@@ -7,6 +7,11 @@ export const home = (function(doc) {
     function homeBuilder() {
         remover.blankSlate();
 
+        const content = doc.getElementById('content');
+        const homeTab = doc.getElementById('hometab');
+
+        homeTab.classList.add('selectedTab');
+
         doc.getElementById('content').textContent = 'HOME';
     }
 
