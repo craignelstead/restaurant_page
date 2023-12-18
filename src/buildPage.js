@@ -1,5 +1,12 @@
 //Builds main structure of page
 
+//Clears content from page
+import { remover } from "./removeContent.js";
+//Tab modules
+import { home } from "./home.js";
+import { menu } from "./menu.js";
+import { contact } from "./contact.js";
+
 export const pageBuilder = (function(doc) {
 
     //Get main container
@@ -25,7 +32,7 @@ export const pageBuilder = (function(doc) {
     header.appendChild(restaurantName);
 
     //Create nav bar
-    function createTab(tab) {
+    function createTab(tab, builder) {
         const newTab = doc.createElement('div');
         newTab.setAttribute('id', tab + 'tab');
         newTab.classList.add('navbtn');
@@ -33,11 +40,17 @@ export const pageBuilder = (function(doc) {
         newTabH2.textContent = tab;
         newTab.appendChild(newTabH2);
         nav.appendChild(newTab);
-        //newTab.addEventListener('click', removeContent);
+        newTab.addEventListener('click', builder);
     }
-    createTab('home');
-    createTab('menu');
-    createTab('contact');
+    createTab('home', home.homeBuilder);
+    createTab('menu', menu.menuBuilder);
+    createTab('contact', contact.contactBuilder);
+
+    
+
+    function hello() {
+        console.log('hello');
+    }
 
     content.textContent='HELLO';
 

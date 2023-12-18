@@ -1,8 +1,16 @@
 //Removes all content
 
-export const menuBuilder = (function(doc) {
-    const mainCont = doc.getElementById('mainContainer');
-    while (mainCont.firstChild) {
-        mainCont.removeChild(mainCont.firstChild);
+export const remover = (function(doc) {
+    
+
+    function blankSlate() {
+        const content = doc.getElementById('content');
+        while (content.firstChild) {
+            content.removeChild(content.firstChild);
+        }
+    }
+
+    return {
+        blankSlate,
     }
 })(document);

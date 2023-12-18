@@ -1,10 +1,17 @@
 //Builds menu page
 
-export const menuBuilder = (function(doc) {
-    const mainCont = doc.getElementById('mainContainer');
+import { remover } from "./removeContent.js";
 
-    //Remove existing content
-    while (mainCont.firstChild) {
-        mainCont.removeChild(mainCont.firstChild);
+export const menu = (function(doc) {
+    
+    function menuBuilder() {
+        remover.blankSlate();
+
+        doc.getElementById('content').textContent = 'MENU';
     }
+
+    return {
+        menuBuilder,
+    }
+
 })(document);
