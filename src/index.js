@@ -1,5 +1,3 @@
-console.log('Is there anybody out there?');
-
 import './style.css';
 //import backgroundImg from './womaneatingfood.jpg';
 

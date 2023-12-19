@@ -12,7 +12,6 @@ export const remover = (function(doc) {
 
         //Remove selected tab
         const tabs = Array.from(doc.querySelectorAll('.navbtn'));
-        console.log(tabs);
         tabs.forEach((tab) => tab.classList.remove('selectedTab'));
     }
 

@@ -1,11 +1,20 @@
+@font-face {
+    font-family: "MyFont";
+    src: url(./OpenSans-VariableFont_wdth\,wght.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     color: white;
     background-color: rgb(34, 34, 34);
+    font-family: 'MyFont';
 }
 
 #header>h1 {
     text-align: center;
+    font-size: 2rem;
 }
 
 #header, #nav {
@@ -41,7 +50,7 @@ body {
 
 #mainContainer {
     display: grid;
-    grid-template-rows: 60px 80px 1200px;
+    grid-template-rows: 60px 80px auto;
 }
 
 #backimg {
@@ -58,10 +67,34 @@ body {
     width: 60%;
     justify-self: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
-#footer {
-    text-align: center;
-    position: absolute;
-    bottom: 0;
+#content>p {
+    width: 70%;
+    font-size: 1.4rem;
+}
+
+#content>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#content li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#content iframe {
+    height: 300px;
+    width: 600px;
 }

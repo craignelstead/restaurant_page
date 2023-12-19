@@ -28,7 +28,7 @@ export const pageBuilder = (function(doc) {
 
     //Header for restaurant name
     const restaurantName = doc.createElement('h1');
-    restaurantName.textContent='Fancy Pants Restaurant';
+    restaurantName.textContent='Fancy Pants Diner';
     header.appendChild(restaurantName);
 
     //Create nav bar
@@ -45,14 +45,6 @@ export const pageBuilder = (function(doc) {
     createTab('home', home.homeBuilder);
     createTab('menu', menu.menuBuilder);
     createTab('contact', contact.contactBuilder);
-
-    
-
-    function hello() {
-        console.log('hello');
-    }
-
-    content.textContent='HELLO';
 
     //Append main containers to document
     mainCont.appendChild(header);

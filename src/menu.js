@@ -8,6 +8,12 @@ export const menu = (function(doc) {
         //Removes content
         remover.blankSlate();
 
+        const content = doc.getElementById('content');
+        const menuTab = doc.getElementById('menutab');
+
+        //Add selected tab
+        menuTab.classList.add('selectedTab');
+
         doc.getElementById('content').textContent = 'MENU';
     }
 
