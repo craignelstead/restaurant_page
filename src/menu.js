@@ -25,12 +25,14 @@ export const menu = (function(doc) {
 
         //Appetizers
         const appetDiv = doc.createElement('div');
+        appetDiv.setAttribute('id', 'menuList');
 
         const appetH = doc.createElement('h1');
         appetH.textContent = 'Not-so-fancy Apps';
-        appetDiv.appendChild(appetH);
+        content.appendChild(appetH);
 
         addMenuItem('Jalepeno Poppers', './loadednachos.jpg', appetDiv);
+        addMenuItem('Other food', './loadednachos.jpg', appetDiv);
 
         content.appendChild(appetDiv);
 

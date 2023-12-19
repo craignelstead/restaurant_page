@@ -103,6 +103,14 @@ body {
     width: 600px;
 }
 
+#content>#menuList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, 200px);
+    column-gap: 60%;
+    row-gap: 20px;
+}
+
 .menuItem {
     display: grid;
     grid-row: 150px 20px;
