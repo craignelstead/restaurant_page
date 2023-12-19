@@ -74,6 +74,10 @@ body {
     gap: 30px;
 }
 
+.topH {
+    font-size: 3rem;
+}
+
 #content>p {
     width: 70%;
     font-size: 1.4rem;
@@ -97,4 +101,16 @@ body {
 #content iframe {
     height: 300px;
     width: 600px;
+}
+
+.menuItem {
+    display: grid;
+    grid-row: 150px 20px;
+}
+
+.menuItem img {
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
 }

@@ -7,7 +7,6 @@ export const home = (function(doc) {
     function homeBuilder() {
         remover.blankSlate();
 
-        const content = doc.getElementById('content');
         const homeTab = doc.getElementById('hometab');
 
         homeTab.classList.add('selectedTab');
@@ -35,7 +34,7 @@ export const home = (function(doc) {
 
         const weekday = '10am - 10pm';
         const weekend = '10am - 12pm';
-        const sunday = '11am - 11pm';
+        const sunday = '12pm - 11pm';
 
         function createHours(day, typeOfDay) {
             const thisDay = doc.createElement('ul');
