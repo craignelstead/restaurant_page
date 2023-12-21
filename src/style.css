@@ -71,7 +71,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 15px;
 }
 
 .topH {
@@ -103,17 +103,22 @@ body {
     width: 600px;
 }
 
-#content>#menuList {
+#content>.menuList {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fill, 200px);
     column-gap: 60%;
     row-gap: 20px;
+    justify-content: center;
 }
 
 .menuItem {
     display: grid;
     grid-row: 150px 20px;
+}
+
+.menuItem>p {
+    justify-self: center;
 }
 
 .menuItem img {

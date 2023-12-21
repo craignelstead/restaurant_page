@@ -6,6 +6,7 @@ import { remover } from "./removeContent.js";
 import { home } from "./home.js";
 import { menu } from "./menu.js";
 import { contact } from "./contact.js";
+import backgroundImg from './womaneatingfood.jpg';
 
 export const pageBuilder = (function(doc) {
 
@@ -21,7 +22,7 @@ export const pageBuilder = (function(doc) {
     //Set container attributes
     header.setAttribute('id', 'header');
     nav.setAttribute('id', 'nav');
-    backImg.setAttribute('src','./womaneatingfood.jpg');
+    backImg.setAttribute('src', backgroundImg);
     backImg.setAttribute('id','backimg');
     backImg.setAttribute('alt','Woman eating food in a restraurant');
     content.setAttribute('id', 'content');

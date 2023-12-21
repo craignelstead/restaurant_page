@@ -1,6 +1,12 @@
 //Builds menu page
 
-import { remover } from "./removeContent.js";
+import { remover } from './removeContent.js';
+
+//Menu images
+import loadedNachos from './loadednachos.jpg';
+import charc from './charc.jpg';
+import fries from './fries.jpg';
+import chicken from './chicken.jpg';
 
 export const menu = (function(doc) {
     
@@ -25,20 +31,34 @@ export const menu = (function(doc) {
 
         //Appetizers
         const appetDiv = doc.createElement('div');
-        appetDiv.setAttribute('id', 'menuList');
+        appetDiv.classList.add('menuList');
 
         const appetH = doc.createElement('h1');
         appetH.textContent = 'Not-so-fancy Apps';
         content.appendChild(appetH);
 
-        addMenuItem('Jalepeno Poppers', './loadednachos.jpg', appetDiv);
-        addMenuItem('Other food', './loadednachos.jpg', appetDiv);
+        addMenuItem('Loaded nachos', loadedNachos, appetDiv);
+        addMenuItem('Charcuterie', charc, appetDiv);
+        addMenuItem('Parm fries', fries, appetDiv);
+        addMenuItem('Wings', chicken, appetDiv);
 
         content.appendChild(appetDiv);
 
         //Entrees
 
+        const entreeDiv = doc.createElement('div');
+        entreeDiv.classList.add('menuList');
 
+        const entreeH = doc.createElement('h1');
+        entreeH.textContent = 'Entrees';
+        content.appendChild(entreeH);
+
+        addMenuItem('Loaded nachos', loadedNachos, entreeDiv);
+        addMenuItem('Charcuterie', charc, entreeDiv);
+        addMenuItem('Parm fries', fries, entreeDiv);
+        addMenuItem('Wings', chicken, entreeDiv);
+
+        content.appendChild(entreeDiv);
     }
 
     //Create new menu item

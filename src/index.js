@@ -1,5 +1,5 @@
 import './style.css';
-//import backgroundImg from './womaneatingfood.jpg';
+// import backgroundImg from './womaneatingfood.jpg';
 
 import { pageBuilder } from "./buildPage.js";
 import { remover } from "./removeContent.js";
