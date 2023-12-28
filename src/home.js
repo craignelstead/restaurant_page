@@ -36,6 +36,8 @@ export const home = (function(doc) {
         const weekend = '10am - 12pm';
         const sunday = '12pm - 11pm';
 
+        //Adds list item with day input and type of day, then 
+        //adds it to the list
         function createHours(day, typeOfDay) {
             const thisDay = doc.createElement('ul');
             thisDay.textContent = `${day}: ${typeOfDay}`;

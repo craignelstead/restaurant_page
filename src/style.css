@@ -63,6 +63,7 @@ body {
 
 #content {
     margin-top: 50px;
+    padding-bottom: 40px;
     background-color: rgba(27, 27, 27, 0.6);
     width: 60%;
     justify-self: center;
@@ -81,6 +82,7 @@ body {
 #content>p {
     width: 70%;
     font-size: 1.4rem;
+    text-align: center;
 }
 
 #content>div {
