@@ -7,6 +7,7 @@ import { home } from "./home.js";
 import { menu } from "./menu.js";
 import { contact } from "./contact.js";
 import backgroundImg from './womaneatingfood.jpg';
+import bricks from './bricks.jpg';
 
 export const pageBuilder = (function(doc) {
 
@@ -47,9 +48,15 @@ export const pageBuilder = (function(doc) {
     createTab('menu', menu.menuBuilder);
     createTab('contact', contact.contactBuilder);
 
+    //Background image for header
+    const brickImg = doc.createElement('img');
+    brickImg.src=bricks;
+    brickImg.setAttribute('id','headerImg');
+
     //Append main containers to document
     mainCont.appendChild(header);
     mainCont.appendChild(nav);
+    mainCont.appendChild(brickImg);
     mainCont.appendChild(backImg);
     mainCont.appendChild(content);
 

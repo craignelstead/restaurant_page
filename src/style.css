@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Fancy";
+    src: url(./PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    font-weight: 800;
+    font-style: bold;
+}
+
 body {
     margin: 0;
     color: white;
@@ -15,10 +22,11 @@ body {
 #header>h1 {
     text-align: center;
     font-size: 2rem;
+    font-family: "Fancy";
 }
 
 #header, #nav {
-    background-color: rgb(34, 34, 34);
+    z-index: 3;
 }
 
 #nav {
@@ -27,6 +35,10 @@ body {
     justify-content: center;
     text-align: center;
     gap: 25px;
+}
+
+#nav>div {
+    height: 60px;
 }
 
 .navbtn {
@@ -48,16 +60,23 @@ body {
     background-color: rgb(97, 97, 97);
 }
 
+#headerImg {
+    position: absolute;
+    opacity: 0.1;
+    width: 100%;
+    z-index: 1;
+}
+
 #mainContainer {
     display: grid;
-    grid-template-rows: 60px 80px auto;
+    grid-template-rows: 80px 60px auto;
 }
 
 #backimg {
     width: 100%;
     height: auto;
     position: absolute;
-    z-index: -1;
+    z-index: 2;
     top: 140px;
 }
 
@@ -73,6 +92,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     gap: 15px;
+    z-index: 3;
 }
 
 .topH {

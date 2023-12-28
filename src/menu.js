@@ -7,6 +7,10 @@ import loadedNachos from './loadednachos.jpg';
 import charc from './charc.jpg';
 import fries from './fries.jpg';
 import chicken from './chicken.jpg';
+import burger from './burger.jpg';
+import waffle from './waffles.jpg';
+import burrito from './burrito.jpg';
+import sandwich from './sandwich.jpg';
 
 export const menu = (function(doc) {
     
@@ -53,10 +57,10 @@ export const menu = (function(doc) {
         entreeH.textContent = 'Entrees';
         content.appendChild(entreeH);
 
-        addMenuItem('Loaded nachos', loadedNachos, entreeDiv);
-        addMenuItem('Charcuterie', charc, entreeDiv);
-        addMenuItem('Parm fries', fries, entreeDiv);
-        addMenuItem('Wings', chicken, entreeDiv);
+        addMenuItem('Ultimate burger', burger, entreeDiv);
+        addMenuItem('Chicken \'n waffles', waffle, entreeDiv);
+        addMenuItem('Burrito platter', burrito, entreeDiv);
+        addMenuItem('Vegan pesto melt', sandwich, entreeDiv);
 
         content.appendChild(entreeDiv);
     }
